@@ -226,7 +226,7 @@ animate title ww wh sf = do
       windowConf = SDL.defaultWindow
          { SDL.windowInitialSize =
              V2 (fromIntegral ww) (fromIntegral wh)
-         , SDL.windowOpenGL = Just SDL.defaultOpenGL
+         , SDL.windowGraphicsContext = SDL.NoGraphicsContext
          }
       renderConf = SDL.RendererConfig
          { SDL.rendererType = SDL.AcceleratedVSyncRenderer
